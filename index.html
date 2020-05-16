@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>css variable updates</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <h2>Update css variables with <span class="h1">JS</span></h2>
+    <div class="controls">
+      <label for="spacing">Spacing</label>
+      <input
+        type="range"
+        name="blue"
+        min="0"
+        max="25"
+        value="10"
+        data-sizing="px"
+      />
 
-<body>
-	<div id="app"></div>
+      <label for="blur">Blur</label>
+      <input type="range" name="blur" min="0" max="10" data-sizing="px"//>
 
-	<script src="src/index.js">
-	</script>
-</body>
+      <label for="base">BaseColor</label>
+      <input type="color" name="base" value="yellow" />
 
+      <img src="back.png" />
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
 </html>
